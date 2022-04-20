@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Serif:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400&display=swap');
+$roboto-serif: 'Roboto Serif', serif;
+$roboto-sans: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$textNormal: #888;
+$textLight: #BBB;
+$textDark: #333;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $roboto-sans;
+  color:$textDark;
+}
+p,input,textarea,select,option {
+  font-family: $roboto-serif;
+  color:$textNormal
+}
+
+li.dummy,div.dummy {
+  display: none;
+}
+
+div:not(.dummy),li:not(.dummy) {
+  display: auto;
+}
+
+
+#container {
+  max-width:800px;
+  width:100%;
+  margin:0 auto;
+  position: relative;
+}
+
+img#pdt {
+  border: .4rem solid #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  top:-6rem;
+  left:40%;
+  position: absolute;
+  width:20%;
+  z-index:10;
+}
+
+#main-slider {
+  margin:8rem 0 0 0;
+  position: relative;
+  width:100%;
+  height:8rem;
+  overflow: visible;
+
+  p:not(.score) {
+    margin:0 1rem;
+    padding:0;
+    color:#fff;
+
+    &.prenom {
+      margin-top:1rem;
+      font-size:1.5rem;
+    }
+
+    &.nom {
+      text-transform: uppercase;
+      font-size:2rem;
+    }
+
+    &.voix {
+      margin:.7rem 1rem 0;
+    }
+  }
+
+  &>div {
+    position:absolute;
+    top:0;
+    height:100%;
+    z-index:4;
+    width:50%;
+  }
+
+  #fin0{
+    left:0;
+
+  }
+  #fin1{
+    right:0;
+    text-align:right;
+    p.score {
+      right:0;
+    }
+  }
+
+  p.score {
+    position:absolute;
+    font-size:4rem;
+    top:-9rem;
+  }
+}
+
+
+ul {
+  margin: 0;
+  padding:0;
+}
+
+li {
+
+  border-bottom: 1px solid $textLight;
+  padding-top:2vh;
+  list-style:none;
+  width:100%;
+  display:block;
+  position:relative;
+
+  &:last-child {
+    border:none;
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+  }
+  g.tick {
+    display:none;
+  }
+  path.handle {
+    fill:transparent;
+    stroke-opacity: 0;
+  }
+  g.slider0{
+    path+text {
+      text-anchor:start;
+    }
+    text.nbvoix {
+      text-anchor:end;
+    }
+  }
+  g.slider1{
+    path+text {
+      text-anchor:end;
+    }
+    text.nbvoix {
+      text-anchor:start;
+    }
+  }
+  g.slider path+text {
+    fill: white;
+    font-size:30px;
+    user-select: none;
+    stroke-width:0;
+  }
+  text.titre,text.voix,text.consigne {
+    text-anchor: middle;
+  }
+  text.titre,text.nbvoix {
+    font-weight:bold;
+  }
+
+  text {
+    font-family: $roboto-sans;
+    user-select: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+

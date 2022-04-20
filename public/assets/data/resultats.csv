@@ -1,0 +1,13 @@
+id,prenom,nom,voix,score,couleur,consigne
+macron,Emmanuel,Macron,9783058,27.85,#ff8000,
+lepen,Marine,Le Pen,8133828,23.15,#1c4385,
+melenchon,Jean-Luc,Mélenchon,7712520,21.95,#fb6969,aucune voix pour Marine Le Pen
+zemmour,Éric,Zemmour,2485226,7.07,#071868,Marine Le Pen
+pecresse,Valérie,Pécresse,1679001,4.78,#2b99fc,"aucune, mais votera Macron"
+jadot,Yannick,Jadot,1627853,4.63,#6ef000,Emmanuel Macron
+lassalle,Jean,Lassalle,1101387,3.13,#9a7d24,aucune
+roussel,Fabien,Roussel,802422,2.28,#ff0000,Emmanuel Macron
+dupontaignan,Nicolas,Dupont-Aignan,725176,2.06,#042fa0,Marine Le Pen
+hidalgo,Anne,Hidalgo,616478,1.75,#f76e90,Emmanuel Macron
+poutou,Philippe,Poutou,268904,0.77,#e54343,aucune voix pour Marine Le Pen
+arthaud,Nathalie,Arthaud,197094,0.56,#bc1a1a,aucune
